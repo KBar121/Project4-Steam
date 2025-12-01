@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PC Game Deal Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>PC Game Deal Finder</h1>
+      <p>
+        Search for a game and this page will call the
+        <strong>CheapShark API</strong> to show current prices and deals
+        from Steam and other PC stores. Cards are animated with
+        Popmotion <strong>Keyframes</strong>.
+      </p>
+    </header>
+
+    <main>
+      <section class="controls">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Type a game title (e.g. Elden Ring)"
+        />
+        <button id="search-btn">Search</button>
+        <p id="status-message" class="status-message">
+          Enter a game title and click Search.
+        </p>
+      </section>
+
+      <section id="cards-grid" class="cards-grid">
+        <!-- Game cards will be injected here -->
+      </section>
+    </main>
+  </div>
+
+  <!-- Popmotion animation library -->
+  <script src="https://unpkg.com/@popmotion/popmotion/dist/popmotion.global.min.js"></script>
+  <!-- Your script -->
+  <script src="script.js"></script>
+</body>
+</html>
